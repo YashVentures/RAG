@@ -1,6 +1,9 @@
+from dotenv import load_dotenv
 from openai import OpenAI
 from langchain_openai import OpenAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
+
+load_dotenv()
 
 openai_client = OpenAI() 
 
