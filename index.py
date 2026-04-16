@@ -23,7 +23,6 @@ text_splitter = RecursiveCharacterTextSplitter(
 chunks = text_splitter.split_documents(documents= docs)
 
 # vector embeddings
-
 embeddings_model = OpenAIEmbeddings(
     model = "text-embedding-3-small"
 )
